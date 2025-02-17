@@ -1,0 +1,2 @@
+- [Klipper config](./klipper-config)
+- [obtain OTA image and Klipper configs](upgrade-img/readme.md)
