@@ -1,9 +1,11 @@
 # Extract K2 Configuration from Update Image
 
+This readme explains how to obtain the shipped configs from the OTA update image, which is located on the K2 printer once you updated your printer.
+
 1. copy update-image from printer
 2. unpack initramfs
 3. mount root (squashfs) partition
-4. find K1 Plus configuration
+4. find K1 Plus Klipper configuration
 
 ## Copy update-image form printer
 
