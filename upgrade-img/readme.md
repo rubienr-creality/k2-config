@@ -7,7 +7,8 @@
 
 ## Copy update-image form printer
 
-- image path on device: `/mnt/UDISK/creality/upgrade/`
+- image path on device (where to extract orig. congfigs from): `/mnt/UDISK/creality/upgrade/`
+- config path on device (ev. where to restore configs): `/mnt/UDISK/printer_data/config/`
 
 ```bash
 mkdir foo && cd foo
