@@ -1,11 +1,12 @@
-# Extract K2 Configuration from Update Image
+# Extract K2 Configuration and other Blobs from Update Image
 
 This readme explains how to obtain the shipped configs from the OTA update image, which is located on the K2 printer once you updated your printer.
+This section is also of interest if you want to extract other blobls (firmware, python code etc...) from the OTA update.
 
 1. copy update-image from printer
 2. unpack initramfs
 3. mount root (squashfs) partition
-4. find K1 Plus Klipper configuration
+4. find K2 Plus Klipper configuration
 
 ## Copy update-image form printer
 
@@ -72,7 +73,7 @@ root-squashfs
 └── www
 ```
 
-## Find K1 Plus configuration
+## Find K2 Plus configuration
 
 ```bash
 # find coonfigs in:
@@ -83,4 +84,10 @@ ls root-squashfs/usr/share/klipper/config/F008_CR0CN240319C13
 box.cfg              gcode_macro.cfg  printer_params.cfg
 factory_printer.cfg  printer.cfg      sensorless.cfg
 
+```
+
+## Find K2 Plust Firmware
+
+```bash
+find root-squashfs -iname "*fw*" -o -iname "*firmware*"
 ```
