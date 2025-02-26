@@ -22,6 +22,9 @@ This repository contains notes w.r.t Creality K2 Plus and my current Klipper con
       3. expand "MQ Telemetry Transport Proto." header
       4. see "User Name: <xxxx>"
       5. note: no password is reported
+6. see also K2 logs:
+   1. `ssh root@<k2_lan_ip>`, U: `root`, P: `Creality_2024` (no root settigns required in the display UI)
+   2. `tail -f /mnt/UDISK/creality/userdata/log/app-server.log`
 5. TODO:
    1. convince `Mosquitto` to accept user without password
    2. setup `acl_file`
